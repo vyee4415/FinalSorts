@@ -18,6 +18,12 @@ public class ArrayMethods3 {
 	}
 	
 	public static void quickSort(int[] list1, int front, int back) {
-		
+		if(front>back) {
+			
+		}
+		// right
+		quickSort(list1,front,list1.length-1);
+		// left
+		quickSort(list1,list1.length+1,back);
 	}
 }
